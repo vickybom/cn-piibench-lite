@@ -13,7 +13,7 @@ version: "1.0.0"
 date-released: "2026-09-24"
 license: MIT
 license-url: "https://opensource.org/licenses/MIT"
-repository-code: "https://github.com/<your-account>/cn-piibench-lite"
+repository-code: "https://github.com/vickybom/cn-piibench-lite"
 abstract: >-
   An external, black-box audit toolkit that measures Chinese personal-information
   memorization and cross-lingual leakage in small and medium language models. It
