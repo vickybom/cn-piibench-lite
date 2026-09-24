@@ -1,0 +1,8 @@
+# Core (required for M1-M6 + dashboard + real API backend)
+pandas>=2.0
+
+# Optional: only needed for the local (hf_local) inference backend on a GPU box.
+# The API backend (dashscope / hf_api) and the demo backend need neither.
+# transformers>=4.45
+# torch>=2.2
+# accelerate>=0.34

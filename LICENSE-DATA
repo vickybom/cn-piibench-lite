@@ -1,0 +1,28 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Mo Ming and Davood Pour Yousefian Barfeh
+
+The synthetic corpus, the prompt matrix, the retained per-query records, the
+result bundles and the LoRA adapters distributed with this work (the "Data")
+are licensed under the Creative Commons Attribution 4.0 International License.
+
+You are free to share and adapt the Data for any purpose, including
+commercially, provided you give appropriate credit, link to the license, and
+indicate whether changes were made.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution:
+
+    Mo Ming and Davood Pour Yousefian Barfeh (2026). CN-PIIBench-Lite:
+    toolkit, synthetic corpus generator, probe matrix, per-query records
+    and adapters. Zenodo. https://doi.org/<DOI>
+
+Note on the corpus: every value in it is fictitious and was generated from a
+national format rule under a fixed seed, then validated against the governing
+standard. No value was sampled from any real or public source. The corpus is
+published so that the measurements in the paper can be reproduced; it must not
+be used to construct or enrich any profile of a real person.
+
+The code in this repository is licensed separately, under the MIT License; see
+LICENSE. The audited model weights are not redistributed here.

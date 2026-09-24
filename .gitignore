@@ -1,0 +1,13 @@
+# Secrets — never commit
+.env
+*.secret
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated artifacts (regenerable from a fixed seed)
+data/
+results/

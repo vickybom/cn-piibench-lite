@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: "PII-Auditor-CN-Lite: a black-box audit toolkit for Chinese PII memorization in language models"
+message: "If you use this toolkit or its records, please cite both the paper and the archived deposit."
+type: software
+authors:
+  - given-names: Ming
+    family-names: Mo
+    affiliation: "College of Computing and Information Technologies, National University, Manila, Philippines"
+  - given-names: Davood
+    family-names: "Pour Yousefian Barfeh"
+    affiliation: "College of Computing and Information Technologies, National University, Manila, Philippines"
+version: "1.0.0"
+date-released: "2026-09-24"
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+repository-code: "https://github.com/<your-account>/cn-piibench-lite"
+abstract: >-
+  An external, black-box audit toolkit that measures Chinese personal-information
+  memorization and cross-lingual leakage in small and medium language models. It
+  generates a checksum-valid synthetic corpus, builds a twelve-template probe
+  matrix, submits the probes through interchangeable backends, and scores
+  extraction by exact match with checksum re-validation, reporting a risk-weighted
+  extraction rate and a matched-pair cross-lingual differential. The toolkit wraps
+  the target model and never reads or modifies its weights.
+keywords:
+  - PII memorization
+  - large language model privacy
+  - Chinese PII
+  - cross-lingual extraction
+  - black-box auditing
+  - differential privacy
+  - benchmark
+references:
+  - type: article
+    title: "CN-PIIBench-Lite: Measuring Chinese PII Memorization and Cross-Lingual Leakage in Small and Medium Domestic Language Models"
+    year: 2026
+    notes: "Manuscript under review"
+    authors:
+      - given-names: Ming
+        family-names: Mo
+      - given-names: Davood
+        family-names: "Pour Yousefian Barfeh"

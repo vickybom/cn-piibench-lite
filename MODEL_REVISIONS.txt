@@ -1,0 +1,22 @@
+CN-PIIBench-Lite - model repository revisions
+
+The revision each pinned model name resolved to when the experiments
+were run. No revision was recorded at execution time; these are
+inferred, on the following ground. The earliest run recorded in any
+result bundle is 2026-07-24 04:52:55. Every repository below was last
+modified long before that and has not changed since, so the head
+commit read from the registry today is the commit those runs used.
+
+This is an inference from repository metadata, not a record made at
+run time. Appendix E states it as such.
+
+Qwen/Qwen2.5-1.5B                 8faed761d45a263340a0528343f099c05c9a4323
+                                  last modified 2024-10-08 10:56:50   primary condition; Sections 5.4, 5.5, Chapter 6
+Qwen/Qwen2.5-3B                   3aab1f1954e9cc14eb9509a215f9e5ca08227a9b
+                                  last modified 2024-09-20 07:58:00   primary condition; Sections 5.4, 5.5
+Qwen/Qwen2.5-1.5B-Instruct        989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+                                  last modified 2024-09-25 12:32:50   primary condition; Sections 5.4, 5.5
+01-ai/Yi-1.5-6B                   157a3d77ab5a8a8f079510eaa25169b547481f06
+                                  last modified 2024-06-26 10:42:02   cross-family replication; Section 5.12
+deepseek-ai/deepseek-llm-7b-base  7683fea62db869066ddaff6a41d032262c490d4f
+                                  last modified 2023-11-30 03:06:57   cross-family replication; Section 5.12

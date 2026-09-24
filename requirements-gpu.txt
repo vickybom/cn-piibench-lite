@@ -1,0 +1,12 @@
+# For a GPU box (Colab / AutoDL / local CUDA). On Google Colab, torch is
+# preinstalled — you can skip it.
+torch>=2.2
+transformers>=4.45
+accelerate>=0.34
+bitsandbytes>=0.43     # 4-bit (nf4) quantization so 7B fits a single 16 GB GPU
+
+# Fine-tuning stress test (finetune_stress.py) only:
+peft>=0.11
+datasets>=2.19
+
+pandas>=2.0
