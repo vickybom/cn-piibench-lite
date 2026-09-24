@@ -9,6 +9,10 @@ authors:
   - given-names: Davood
     family-names: "Pour Yousefian Barfeh"
     affiliation: "College of Computing and Information Technologies, National University, Manila, Philippines"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22928925"
+    description: "The archived deposit of the toolkit, records and adapters"
 version: "1.0.0"
 date-released: "2026-09-24"
 license: MIT

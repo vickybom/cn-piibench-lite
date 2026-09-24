@@ -87,7 +87,7 @@ archived separately, because they are about 565 MB:
 
 > Mo Ming and Davood Pour Yousefian Barfeh (2026). *CN-PIIBench-Lite: toolkit,
 > synthetic corpus generator, probe matrix, per-query records and adapters.*
-> Zenodo. DOI: **[to be inserted]**
+> Zenodo. https://doi.org/10.5281/zenodo.22928925
 
 The deposit holds the corpus generator and its seed, the twelve-template probe
 matrix, the retained per-query records of every condition (414,720 probes), the
