@@ -152,7 +152,7 @@ def score(model, tok, questions, prefix, batch_size: int = 8) -> dict:
     assert len(set(ids)) == 4, (f"the four option letters share token ids {ids}; "
                                 f"likelihood scoring cannot separate them")
     # Truncate from the LEFT. The default trims the tail, which here is the
-    # "答案：" the whole method scores at - a prompt over the limit would be
+    # "答案：" ("Answer:") the whole method scores at - a prompt over the limit would be
     # scored at whatever token happened to survive.
     tok.truncation_side = "left"
 

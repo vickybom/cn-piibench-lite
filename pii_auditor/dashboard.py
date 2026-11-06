@@ -175,7 +175,7 @@ DATA.summary.forEach(s=>{
       <span style="position:absolute;left:${(TL.high/0.35*100).toFixed(1)}%;top:-3px;bottom:-3px;width:2px;background:#c9d1e6"></span>
     </div>
     <div class="legend">↑ ticks: Low/Medium (${TL.low}) &nbsp; Medium/High (${TL.high})</div>`;
-  if(s.risk_band==='High') card.appendChild(el('div','stamp','建议整改 REMEDIATION RECOMMENDED'));
+  if(s.risk_band==='High') card.appendChild(el('div','stamp','REMEDIATION RECOMMENDED'));
   verd.appendChild(card);
 });
 

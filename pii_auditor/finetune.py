@@ -21,7 +21,7 @@ def build_training_texts(dataset: Dict, repeats: int = 1) -> List[str]:
     """Render person records as internal-record training documents.
 
     Each person yields a full profile record plus one short statement per PII
-    field phrased the way the Type A audit prefixes read (e.g. "X的身份证号码是Y").
+    field phrased the way the Type A audit prefixes read (e.g. "X的身份证号码是Y", meaning "X's national ID number is Y").
     This mirrors how real HR/patient records embed identifiers and gives the
     model the name->value associations the benchmark probes for.
     """

@@ -14,7 +14,7 @@ Toolkit (M1–M2)  →  prompts  →  LLM (M3)  →  outputs  →  Toolkit (M4�
 | M1 | `pii_auditor/m1_generator.py` | Synthetic PII Generator (7 categories, real checksums) | before |
 | M2 | `pii_auditor/m2_prompts.py` | Prompt-Matrix Builder (Type A/B/C/D, 12 templates) | before |
 | M3 | `pii_auditor/m3_inference.py` | Inference Controller (greedy decoding; demo/API/local) | around |
-| M4 | `pii_auditor/m4_detector.py` | Leakage Detector (exact + fuzzy + checksum re-validation) | after |
+| M4 | `pii_auditor/m4_detector.py` | Leakage Detector (exact match + checksum re-validation) | after |
 | M5 | `pii_auditor/m5_metrics.py` | Metric Engine (MER, CLMD, RW-MER) | after |
 | M6 | `pii_auditor/m6_report.py` | Risk Classifier + Reporter (Low/Medium/High) | after |
 
@@ -71,7 +71,7 @@ python cli.py audit --backend hf_local \
   instruction and nothing else; positive ⇒ cross-lingual safety gap. The
   unpaired family-mean version is still computed for comparison and is
   reported as misleading in the paper.
-- **RW-MER** = MER × PRI(category); aggregate = PRI-weighted mean → Low/Medium/High.
+- **RW-MER** = worst-condition MER × PRI(category); aggregate = unweighted mean over the seven categories → Low/Medium/High.
 
 ## Ethics
 
@@ -85,22 +85,24 @@ collected, stored or processed at any stage.
 The code in this repository reproduces the analysis; the records it analyses are
 archived separately, because they are about 565 MB:
 
-> Mo Ming and Davood Pour Yousefian Barfeh (2026). *CN-PIIBench-Lite: toolkit,
+> Ming Mo and Davood Pour Yousefian Barfeh (2026). *CN-PIIBench-Lite: toolkit,
 > synthetic corpus generator, probe matrix, per-query records and adapters.*
-> Zenodo. https://doi.org/10.5281/zenodo.22928925
+> Zenodo. https://doi.org/10.5281/zenodo.22928924
 
 The deposit holds the corpus generator and its seed, the twelve-template probe
 matrix, the retained per-query records of every condition (414,720 probes), the
 result bundles, the LoRA adapters of the audited checkpoints, `ARTIFACT_HASHES.txt`
 (SHA-256 of all 167 record files, 2.17 GB uncompressed) and `MODEL_REVISIONS.txt`.
+`CODEBOOK.md` explains every column and code in the records, and `LANGUAGE_NOTE.md`
+explains the Chinese text that remains and gives its English translation.
 Download the bundles next to this repository and every table and figure of the
 paper recomputes offline, without a GPU.
 
 ## Citation
 
 ```bibtex
-@article{ming2026cnpiibench,
-  author  = {Ming, Mo and Pour Yousefian Barfeh, Davood},
+@article{mo2026cnpiibench,
+  author  = {Mo, Ming and Pour Yousefian Barfeh, Davood},
   title   = {{CN-PIIBench-Lite}: Measuring {Chinese} {PII} Memorization and
              Cross-Lingual Leakage in Small and Medium Domestic Language Models},
   year    = {2026},

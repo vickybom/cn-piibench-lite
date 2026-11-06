@@ -11,10 +11,10 @@ authors:
     affiliation: "College of Computing and Information Technologies, National University, Manila, Philippines"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22928925"
-    description: "The archived deposit of the toolkit, records and adapters"
-version: "1.0.0"
-date-released: "2026-09-24"
+    value: "10.5281/zenodo.22928924"
+    description: "Concept DOI of the archived deposit; it resolves to the latest version"
+version: "1.1.0"
+date-released: "2026-11-05"
 license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 repository-code: "https://github.com/vickybom/cn-piibench-lite"
